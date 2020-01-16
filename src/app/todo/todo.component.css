@@ -1,0 +1,23 @@
+
+li > span {
+     display:flex;
+    justify-content: flex-start;
+}
+
+li {
+    /* list-style-type: none; */
+    padding:15px;
+}
+ button {
+    text-decoration:none;
+    border: 1px solid #ff69b4;
+    color: #ff69b4;
+    background-color: #fff;
+    border-radius: 5px; 
+    height: 20px;
+    padding: 3px;
+  
+} 
+.strikethrough {
+    text-decoration: line-through;
+  }

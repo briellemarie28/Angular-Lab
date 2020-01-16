@@ -1,0 +1,29 @@
+<ol> 
+
+  <li *ngFor = "let item of items" [ngClass] = "{'strikethrough': item.completed}"  > 
+    <span>
+      <button *ngIf = "!item.completed">Complete</button> 
+      {{ item.task }}
+      <i class="fas fa-times"></i>
+
+    </span>
+  </li> 
+</ol>
+
+
+  
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
