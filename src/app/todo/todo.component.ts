@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 export interface ITodo {
   task : string;
@@ -11,7 +11,10 @@ export interface ITodo {
   styleUrls: ['./todo.component.css']
 })
 
-export class TodoComponent implements OnInit, ITodo{  
+
+export class TodoComponent implements OnInit, ITodo { 
+  
+  
   task: string;
   completed: boolean;
   items: ITodo[] = [
@@ -28,10 +31,41 @@ export class TodoComponent implements OnInit, ITodo{
     {"task" : 'Be Awesome',
     "completed" : false},
 ];
+
+newTask: string;
   constructor() {
+    this.items;
+    this.newTask = '';
+    this.completed = false;
    }
+
+   addTask () {
+    this.items.push; ({
+      "completed" : false,
+      "task" : this.newTask})
+  }
+  completeTask () {
+    this.completed = true;;
+  }
+  removeTask () {
+    this.items.splice;
+  }
   ngOnInit() {
   }
 }
 
+  
+//   
 
+//  completeTask () {
+//     this.completed = true;
+//    }
+
+//  addTask () {
+//   this.items.push;
+//  }
+
+// removeTask() {
+//   this.items.pop;
+// }
+// 
