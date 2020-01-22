@@ -32,10 +32,10 @@ export class TodoComponent implements OnInit, ITodo {
     "completed" : false},
 ];
 
+@Input()
 newTask: string;
   constructor() {
     this.items;
-    this.newTask = '';
     this.completed = false;
    }
 
