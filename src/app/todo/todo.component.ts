@@ -13,8 +13,6 @@ export interface ITodo {
 
 
 export class TodoComponent implements OnInit, ITodo { 
-  
-  
   task: string;
   completed: boolean;
   items: ITodo[] = [
@@ -35,37 +33,29 @@ export class TodoComponent implements OnInit, ITodo {
 @Input()
 newTask: string;
   constructor() {
-    this.items;
-    this.completed = false;
    }
-
    addTask () {
-    this.items.push; ({
+    this.items.push ({
       "completed" : false,
       "task" : this.newTask})
   }
   completeTask () {
-    this.completed = true;;
+    this.completed = true;
   }
-  removeTask () {
-    this.items.splice;
-  }
+
   ngOnInit() {
   }
-}
+ }
+//removeTask=(array, n) =>
+ {
+//    const index = array.indexOf(n);
+//    if (index > -1) {
+//     array.splice(index, 1);
+// }
+//    return array;
+//  }
+ }
+ 
 
   
-//   
 
-//  completeTask () {
-//     this.completed = true;
-//    }
-
-//  addTask () {
-//   this.items.push;
-//  }
-
-// removeTask() {
-//   this.items.pop;
-// }
-// 

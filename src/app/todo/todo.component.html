@@ -3,7 +3,7 @@
 
 
 <form> 
-  <input type = "text" class = "filter" placeholder = "Filter your todos">
+<input type = "text" class = "filter" placeholder = "Filter your todos">
 <ol> 
   <li *ngFor ="let item of items" [ngClass] = "{'strikethrough': item.completed}" > 
     <span>
@@ -11,7 +11,7 @@
        {{ item.task }}    
       
     </span>
-    <button class = "remove" (click)="removeTask()"> X </button>
+    <button class = "remove" (click)="removeTask(n)"> X </button>
   </li> 
 </ol>
 <input type = "text" class = "userInput" placeholder = "Add your todo" 
